@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>  
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminue o tamanho do seu navegador.</p>
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="foto flexível">
+        <!--Media: largura da imagem
+        SRCSET: origem da imagem
+        TYPE: tipo de arquivo-->
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+
+   <audio preload="metadata" controls>
+       <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+       <source src="midia/guanacast-33.ogg" type="audio/ogg">
+       <source src="midia/guanacast-33.wav" type="image/wav">
+       <p>seu navegador não suporta áudio <a href="">href="midia/guanacast-33.mp3" type="audio/mpeg"</a></p> <!--devo evitar o formto WAV devido ao seu tamanho
+                SRC: origem do áudio-->
+   </audio>
+   <br>
+   <br>
+  <video width="600" poster="videos/thumb.png" controls> 
+            <source src="videos/12-2_BR1-2447452653_01-.mp4" type="video/mp4">
+            <source src="videos/12-2_BR1-2447452653_01.webm" type="video/webm">
+            <p>Infelizmente seu navegador não conseguiu carregar o vídeo
+                <a href="videos/12-2_BR1-2447452653_01-.mp4" download="12-2_BR1-2447452653_01-.mp4" type="video/mp4"></a>
+            </p>
+  </video>
+    
+</body>
+</html>

@@ -1,0 +1,180 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Idroid;
+    src: url(../fontes/idroid.otf);
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1f6a55;
+}
+
+/* configurações do site em si */
+
+p {
+    line-height: 140%;
+}
+
+#header {
+    background-image: linear-gradient(90deg, #E5D1D0, #F5E4D7);
+    text-align: center;
+    padding: 30px;
+    font-size: 1.95rem;
+}
+
+.name-header {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+}
+
+.links {
+    text-align: left;
+    margin: 30px 0 0 0;
+}
+
+nav ul a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.65rem;
+    text-decoration: none;
+    margin-right: 15px;
+    color: black;
+    padding: 5px;
+}
+
+nav ul a:hover {
+    background-color: #9e8d8c;
+    border-radius: 3px;
+}
+
+main {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 40px;
+    font-size: 2rem;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.titulo-main {
+    font-family: 'idroid';
+    margin: 20px 0;
+}
+
+.texto-main {
+    word-spacing: 6px;
+    text-indent: 30px;
+}
+
+/* p::first-letter {
+    margin-left: 30px;
+} */
+
+/* .tres {
+    display: none;
+} */
+
+.gradiente { 
+    background-image: linear-gradient(to right, #50CCBC, white);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+}
+
+.foto {
+    width: 50%;
+    margin: 30px auto;
+}
+
+.video {
+    margin: 30px -40px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.video iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#extra {
+    background-color: white;
+    max-width: 700px;
+    margin: -90px auto;
+    padding: 40px;
+    font-size: 2rem;  
+}
+
+#container-extra {
+    background-color: #E5D1D0;
+    border-radius: 4px;
+    padding: 15px;
+    margin: 0 -20px;
+}
+
+#container-extra p {
+    font-size: 1.9rem;
+    margin: 5px 0;
+}
+
+#titulo-extra {
+    background-color: #1f6a55;
+    border-radius: 4px;
+    margin: -15px -15px 0 -15px;
+    padding: 8px;
+    color: white;
+}
+
+.lista {
+    display: grid;
+    grid-template-columns:  repeat(2, minmax(min-content, 1fr));
+    margin-left: 45px;
+}
+
+.lista {
+    list-style-image: url(../imagens/marca-de-verificacao-contorno-preto.png);
+}
+
+.lista p {
+    margin-left: -20px;
+}
+
+aside {
+    margin-top: 15px;
+    font-size: 2rem;
+}
+
+#footer {
+    font-size: 2.2rem;
+    background-color: #35524A;
+    position: relative;
+    bottom: -70px;
+    text-align: center;
+    color: white;
+}
+
+@media screen and (max-width: 570px) {
+    #container-extra p{
+        font-size: 1.5rem;
+    }
+
+    .lista {
+        padding: 0 15px;
+    }
+}
